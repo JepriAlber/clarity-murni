@@ -16,6 +16,7 @@ a {
 }
 /* -----------------Header------------------------------ */
 header{
+    top: 0;
     height: 75px;
     line-height: 27px;
     font-size: 18px;
@@ -64,15 +65,13 @@ header{
     font-size: 14px;
     color: #69803E;
 }
-
 .top-wrapper-btn{
-    margin-top: 26px;
-    margin-right: 24px;
+    margin-top: 30px;
 }
 
 .btn{
+    margin-right: 24px;
     padding: 16px 22px;
-    height: 56px;
     box-sizing: border-box;
     border: 1px solid #415123;
     border-radius: 10px;
@@ -89,10 +88,10 @@ header{
 }
 /* ---------------------content------------------- */
 .content{
-    margin-top: 90px;
     text-align: center;
 }
 .title-content{
+    margin-top: 90px;
     font-weight: bold;
     font-size: 40px;
     line-height: 64px;
@@ -106,7 +105,7 @@ header{
     color: #999999;
 }
         /* ----product--- */
-.row{
+.row-product{
     display: flex;
     justify-content: center;
 }
@@ -131,7 +130,8 @@ header{
 .ket-product{
     margin: 20px;
 }
-.title-product, .unit-product{
+.title-product,
+.unit-product{
     text-align: left;
 }
 .title-product{
@@ -166,4 +166,76 @@ header{
     font-size: 16px;
     background: #415123;
     color: #FFFFFF;
+}
+        /* ------are you------- */
+.row-are-you{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+}
+.row-are-you h3{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 64px;
+}
+.row-are-you p{
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+}
+.young{
+    width: 50%;
+    height: 355px;
+    background-image: url('../img/young-people-crop.png');
+    background-position: center;
+    position: relative;
+    color: #FFFFFF;
+}
+.elderly{
+    width: 50%;
+    height: 355px;
+    background-image: url('../img/elderly-crop.png');
+    background-position: center;
+    position: relative;
+    color: #FFFFFF;
+}
+.row-are-you
+.are-you-content{
+    padding: 98px 110px;    
+    position: relative;
+    z-index: 1;
+}
+.young::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+    background-color: rgba(65, 81, 35, 0.62);
+}
+.elderly::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+    background-color: rgba(65, 81, 35, 0.62);
+}
+.btn-are-you{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 16px 36px;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.btn-are-you:hover{
+    border-color:#333333 ;
+    color: #333333;
+    background-color: #415123;
 }
