@@ -641,7 +641,7 @@ footer .copyright{
         overflow-wrap: normal;
         margin-top: 50px;
         font-size: 28px;
-        line-height: 36px;
+        line-height: 40px;
     }
     .p-title-content{
         margin: 0 auto;
@@ -696,7 +696,6 @@ footer .copyright{
         font-size: 11px;
         line-height: 16px;
     }
-    /* -----------------are you---------------------- */
             /* ------are you------- */
     .row-are-you{
         margin-top: 25px;
@@ -769,46 +768,102 @@ footer .copyright{
         line-height: 22px;
     }
         /* ----------testimonial---------- */
-        .row-testimonial{
-            margin-top: 24px;
-            display: flex;
-            justify-content: center;
-        }
-        .testimonial-content{
-            width: 325px;
-            padding: 37px 25px 40px;
-        }
-        .testimonial-content .ratting{
-            margin: 0 auto 5px;
-        }
-        .ratting img{
-            width: 11.99px;
-            height: 10.53px;
-        }
-        .testimonial-content .testimonial-msg{
-            margin: 0 auto 10px;
-            width: 275px; 
-            font-size: 12px;
-            line-height: 22px;  
-        }
-        .testimonial-content .user{
-            width: 155px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .testimonial-content .user .img-user{
-            width: 40px;
-            height: 40px;
-            margin-right: 0;
-            border-radius: 100%;
-        }
-        .testimonial-content .user .name-user{
-            padding-top: 7px;
-            font-size: 10px;
-            line-height: 15px;
-        }
-        .testimonial-content .user .alamat-user{
-            font-size: 8px;
-            line-height: 12px;
-        }
+    .row-testimonial{
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    .testimonial-content{
+        width: 325px;
+        padding: 37px 25px 40px;
+    }
+    .testimonial-content .ratting{
+        margin: 0 auto 5px;
+    }
+    .ratting img{
+        width: 11.99px;
+        height: 10.53px;
+    }
+    .testimonial-content .testimonial-msg{
+        margin: 0 auto 10px;
+        width: 275px; 
+        font-size: 12px;
+        line-height: 22px;  
+    }
+    .testimonial-content .user{
+        width: 155px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .testimonial-content .user .img-user{
+        width: 40px;
+        height: 40px;
+        margin-right: 0;
+        border-radius: 100%;
+    }
+    .testimonial-content .user .name-user{
+        padding-top: 7px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .testimonial-content .user .alamat-user{
+        font-size: 8px;
+        line-height: 12px;
+    }
+    /* -------subscribe------ */
+
+    .subscribe{
+        width: 100%;
+        height: 402px;
+        text-align: center;
+    }
+    .subscribe .title-content,
+    .subscribe .title-content-isi{
+        color: #FFFFFF;
+    }
+    .subscribe .title-content{
+        width: 216px;
+    }
+    .subscribe .title-content-isi{
+        margin: 10px auto;
+        width: 248px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .subscribe .email{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 26px;
+        width: 324.99px;
+        height: 39.54px;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+    }
+    .subscribe .email img{
+        float: left;
+        margin-top: 15px;
+        margin-left: 19px;
+        width: 4%;
+    }
+    .subscribe .email input{
+        margin-top: 13px;
+        width: 112px;
+        height: 15px;
+        border: 0px;
+        font-size: 9px;
+        line-height: 13px;
+        float: left;
+    }
+    .subscribe input[type="text"]:focus {
+        outline: none;
+    }
+    .subscribe .btn-email{
+        margin: 7px;
+        width: 78px;
+        height: 25.16px;
+        border-radius: 5px;
+        font-size: 9px;
+        line-height: 13px;
+        float: right;
+    }
 }
