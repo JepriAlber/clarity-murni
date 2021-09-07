@@ -14,28 +14,79 @@ a {
     margin-left: 51px;
     margin-right: 51px;
 }
+  
 /* -----------------Header------------------------------ */
 header{
-    top: 0;
     height: 75px;
     line-height: 27px;
     font-size: 18px;
     font-weight: 500;
     color: #415123;
 }
-.logo-header{
+.nav {
+    height: 75px;;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
     padding: 18px;
-    float: left;
-}
-.list-header{
-    padding: 22px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
     float: right;
-}
-.list-header li{
-    margin-right: 25px;
-    float: left;
-    line-height: 27px;
-}
+    font-size: 18px;
+  }
+  .nav > .nav-links > ul li a{
+    color: #415123;
+    display: block;
+    padding: 0 8px;
+    line-height: 64px;
+    font-size: 18px;
+    text-decoration: none;
+
+  }
+  .nav > .nav-links > ul{
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+    
+  }
+  .nav > .nav-links > ul li{
+    display: inline-block;
+    
+    
+  }
+  .nav > .nav-links > ul li:hover{
+      border-radius: 5px;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+
+ .nav .nav-links ul a.icon{
+ margin-left: 80px;
+ margin-right: 10px;
+ }
+
+ .nav .nav-links ul a i{
+    border-radius: 50px;
+    padding: 7px;
+    margin-left: 5px;
+ }
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
     width: 100%;
@@ -44,21 +95,18 @@ header{
     background-size: cover;
     background-position: center;
 }
-
 .top-wrapper-content{
     padding-top: 150px;
     width: 530px;
     height: 272px;
     overflow-wrap: normal;
 }
-
 .top-wrapper-content h1{
     line-height: 60px;
     font-weight: bold;
     font-size: 48px;
     color: #333333;    
 }
-
 .top-wrapper-content p{
     line-height: 28px;
     font-weight: normal;
@@ -68,7 +116,6 @@ header{
 .top-wrapper-btn{
     margin-top: 30px;
 }
-
 .btn{
     margin-right: 24px;
     padding: 16px 22px;
@@ -81,7 +128,6 @@ header{
     font-size: 16px;
     color: #415123;
 }
-
 .btn:hover{
     color: #FFFFFF;
     background-color: #415123;
@@ -200,8 +246,7 @@ header{
     position: relative;
     color: #FFFFFF;
 }
-.row-are-you
-.are-you-content{
+.row-are-you .are-you-content{
     padding: 98px 110px;    
     position: relative;
     z-index: 1;
@@ -280,7 +325,6 @@ header{
     line-height: 28px;
     color: #999999;
 }
-
     /* ----------testimonial---------- */
 .row-testimonial{
     margin-top: 60px;
@@ -380,6 +424,9 @@ header{
     margin-top: 17px;
     border: 0px;
     font-size: 14px;
+}
+.subscribe input[type="text"]:focus {
+    outline: none;
 }
 .subscribe .btn-email{
     width: 144px;
@@ -486,3 +533,71 @@ footer .copyright{
 .copyright a {
     color: #CBD8B4;
 }
+
+/* ----------------------------------------------------------------- */
+@media (max-width:750px) {
+    .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 11px;
+    }
+    .nav > .nav-btn > label {
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        display: inline-block;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: #fff;
+    }
+    .nav > .nav-btn > label > span {
+        width: 25px;
+        display: block;
+        height: 10px;
+        border-top: 2px solid #415123;
+    }
+    .nav > .nav-links {
+        display: block;
+        width: 100%;
+        height: 0px;
+        top: 75px;
+        left: 0px;
+        position: absolute;
+        overflow-y: hidden;
+        transition: all 0.3s ease-in;
+        background-color: #fff;
+    }
+    .nav > .nav-links > ul li a {
+        display: block;
+        width: 100%;
+        line-height: 33px;
+    }
+
+    /*   */
+      .nav > .nav-links > ul li{
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+            background-color: #fff;
+      }
+      .nav > .nav-links > ul li a{
+            margin-left: 40%;
+      }
+      .nav .nav-links ul a.icon{
+            margin-left: 33%;
+      }
+
+    /*   */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+         height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+  }
