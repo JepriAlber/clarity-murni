@@ -586,7 +586,9 @@ footer .copyright{
             background-color: #fff;
       }
       .nav > .nav-links > ul li a{
-            margin-left: 4%;
+            margin-left: 2%;
+            font-size: 12px;
+            line-height: 10px;
       }
       .nav .nav-links ul a.icon{
             line-height: 15px;
@@ -826,7 +828,7 @@ footer .copyright{
         line-height: 22px;
     }
     .subscribe .email{
-        width: 324.99px;
+        width: 75%;
         height: 39.54px;
         border-radius: 8px;
         background-color: #FFFFFF;
@@ -846,7 +848,7 @@ footer .copyright{
         float: left;
     }
     .subscribe .btn-email{
-        margin: 7px;
+        margin: 7px 3px;
         width: 78px;
         height: 25.16px;
         border-radius: 5px;
@@ -869,7 +871,7 @@ footer .copyright{
     }
     .clarity-footer{
         margin: 0 auto;
-        width: 374px;
+        width: 100%;
         padding: 66px 0 45px;
     }
     .clarity-footer .deskripsi{
@@ -920,8 +922,5 @@ footer .copyright{
         text-align: center;
         font-size: 11px;
         line-height: 16px;
-    }
-    .copyright a {
-        color: #CBD8B4;
     }
 }
