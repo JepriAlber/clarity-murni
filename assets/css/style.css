@@ -538,7 +538,6 @@ footer .copyright{
 @media all and (max-width:900px) {
 
     /* ----------nabar/ header--------------- */
-
     .container{
         margin-left: 0;
         margin-right: 0;
@@ -637,11 +636,17 @@ footer .copyright{
     }
     /* ----------------------------content------------------------------- */
     .title-content{
+        margin: 0 auto;
+        width: 181px;
+        overflow-wrap: normal;
         margin-top: 50px;
         font-size: 28px;
-        line-height: 64px;
+        line-height: 36px;
     }
     .p-title-content{
+        margin: 0 auto;
+        width: 286px;
+        overflow-wrap: normal;
         font-size: 12px;
         line-height: 22px;
     }
@@ -690,5 +695,77 @@ footer .copyright{
         height: 34.85px;
         font-size: 11px;
         line-height: 16px;
+    }
+    /* -----------------are you---------------------- */
+            /* ------are you------- */
+    .row-are-you{
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .row-are-you h3{
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .row-are-you p{
+        margin: 0 auto 20px;
+        width: 240px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .young{
+        width: 100%;
+        height: 208px;
+    }
+    .elderly{
+        width: 100%;
+        height: 208px;
+    }
+    .row-are-you .are-you-content{
+        padding: 36px 56px;    
+        position: relative;
+        z-index: 1;
+    }
+    .btn-are-you{
+        border: 1px solid #FFFFFF;
+        padding: 9px 26px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    /* ---------choose product--------- */
+    .row-choose-product{
+        display: flex;
+        flex-direction: column;
+    }
+    .choose-product-item{
+        width: 324px;
+        height: 205px;
+        margin: 29px auto 0;
+        text-align: center;
+    }
+    .choose-product-item .cover{
+        margin-top: 20px;
+        margin-bottom: 26px;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: inline-block;
+        background-color: #415123;
+    }
+    .cover img{
+        padding-top: 14px;
+    }
+    .choose-product-item h5{
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .choose-product-item p{
+        margin: 0 auto;
+        width: 235px;
+        font-size: 12px;
+        line-height: 22px;
     }
 }
