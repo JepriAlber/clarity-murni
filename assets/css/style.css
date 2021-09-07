@@ -768,4 +768,47 @@ footer .copyright{
         font-size: 12px;
         line-height: 22px;
     }
+        /* ----------testimonial---------- */
+        .row-testimonial{
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .testimonial-content{
+            width: 325px;
+            padding: 37px 25px 40px;
+        }
+        .testimonial-content .ratting{
+            margin: 0 auto 5px;
+        }
+        .ratting img{
+            width: 11.99px;
+            height: 10.53px;
+        }
+        .testimonial-content .testimonial-msg{
+            margin: 0 auto 10px;
+            width: 275px; 
+            font-size: 12px;
+            line-height: 22px;  
+        }
+        .testimonial-content .user{
+            width: 155px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .testimonial-content .user .img-user{
+            width: 40px;
+            height: 40px;
+            margin-right: 0;
+            border-radius: 100%;
+        }
+        .testimonial-content .user .name-user{
+            padding-top: 7px;
+            font-size: 10px;
+            line-height: 15px;
+        }
+        .testimonial-content .user .alamat-user{
+            font-size: 8px;
+            line-height: 12px;
+        }
 }
