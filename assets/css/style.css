@@ -314,9 +314,9 @@ header{
 .testimonial-content .user .img-user{
     width: 40px;
     height: 40px;
+    margin-right: 10px;
     border-radius: 100%;
     background-color: #C4C4C4;
-    margin-right: 10px;
     float: left;
 }
 .testimonial-content .user .name-user{
@@ -326,4 +326,67 @@ header{
 .testimonial-content .user .alamat-user{
     font-size: 10px;
     color: #999999;
+}
+
+    /* -------subscribe------ */
+
+.subscribe{
+    height: 332px;
+    width: 100%;
+    background: url(../img/newsletter-crop.png) center;
+    text-align: center;
+    background-size: cover;
+    position: relative;
+}
+.subscribe .isi{
+    margin-top: 100px;
+    padding-top: 0.5px;
+    position: relative;
+    z-index: 1;
+    
+}
+.subscribe::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(65, 81, 35, 0.86);
+    position: absolute;
+    bottom: 0;
+}
+.subscribe .title-content,
+.subscribe .title-content-isi{
+    color: #FFFFFF;
+}
+.subscribe .email{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px;
+    width: 600px;
+    height: 73px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.subscribe .email img{
+    float:left;
+    margin-top: 28px;
+    margin-left: 27px;
+    width: 3%;
+}
+.subscribe .email input{
+    width: 360px;
+    height: 41px;
+    margin-left: 10px;
+    margin-top: 17px;
+    border: 0px;
+    font-size: 14px;
+}
+.subscribe .btn-email{
+    width: 144px;
+    height: 47px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #415123;
+    color: #FFFFFF;
 }
