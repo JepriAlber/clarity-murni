@@ -90,7 +90,7 @@ header{
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
     width: 100%;
-    height: 650px;
+    height: calc(100vh - 50px);
     background-image: url('../img/hero-banner.jpg');
     background-size: cover;
     background-position: center;
@@ -535,7 +535,10 @@ footer .copyright{
 }
 
 /* ----------------------------------------------------------------- */
-@media (max-width:750px) {
+@media all and (max-width:900px) {
+
+    /* ----------nabar/ header--------------- */
+
     .container{
         margin-left: 0;
         margin-right: 0;
@@ -600,4 +603,92 @@ footer .copyright{
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
-  }
+        /* -----------top wrapper---------------- */
+
+    .top-wrapper{
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+        text-align: center;
+    }
+    .top-wrapper-content{
+        margin: 0 auto;
+        padding-top: 150px;
+        width: 309px;
+        height: 194px;
+        overflow-wrap: normal;
+    }
+    .top-wrapper-content h1{
+        font-size: 28px;
+        line-height: 40px; 
+    }
+    .top-wrapper-content p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .top-wrapper-btn{
+        margin-top: 18px;
+    }
+    .btn{
+        margin-right: 18px;
+        padding: 11px 28px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    /* ----------------------------content------------------------------- */
+    .title-content{
+        margin-top: 50px;
+        font-size: 28px;
+        line-height: 64px;
+    }
+    .p-title-content{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .row-product{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-shop{
+        width: 239px;
+        margin: 0 auto 50px ;
+        box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.05);
+    }
+    .product{
+        margin: 14px auto 0px;
+        width: 210px;
+        height: 188px;
+        padding: 34px;
+    }
+    .product img{
+        width:50%;
+    }
+    .ket-product{
+        margin:14px;
+    }
+    .title-product,
+    .unit-product{
+        text-align: left;
+    }
+    .title-product{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .unit-product{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .price-product{
+        margin-top: -42px;
+        float: right;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .btn-cart{
+        margin-top: 19px;
+        width: 100%;
+        height: 34.85px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
