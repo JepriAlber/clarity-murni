@@ -662,12 +662,12 @@ footer .copyright{
     }
     .product{
         margin: 14px auto 0px;
-        width: 210px;
+        width: 90%;
         height: 188px;
         padding: 34px;
     }
     .product img{
-        width:50%;
+        width: 85px;
     }
     .ket-product{
         margin:14px;
