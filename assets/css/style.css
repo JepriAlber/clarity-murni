@@ -586,10 +586,10 @@ footer .copyright{
             background-color: #fff;
       }
       .nav > .nav-links > ul li a{
-            margin-left: 40%;
+            margin-left: 4%;
       }
       .nav .nav-links ul a.icon{
-            margin-left: 33%;
+            line-height: 15px;
       }
 
     /*   */
