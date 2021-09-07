@@ -114,7 +114,7 @@ header{
     margin: 0 10px;
     align-items: stretch;
     justify-content: center;
-    box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.1);
+    box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.05);
     border-radius: 10px;  
     background-color: #FFFFFF;
 }
@@ -187,16 +187,16 @@ header{
 .young{
     width: 50%;
     height: 355px;
-    background-image: url('../img/young-people-crop.png');
-    background-position: center;
+    background: url('../img/young-people-crop.png') no-repeat center;
+    background-size: cover;
     position: relative;
     color: #FFFFFF;
 }
 .elderly{
     width: 50%;
     height: 355px;
-    background-image: url('../img/elderly-crop.png');
-    background-position: center;
+    background: url('../img/elderly-crop.png') no-repeat center;
+    background-size: cover;
     position: relative;
     color: #FFFFFF;
 }
@@ -250,7 +250,7 @@ header{
     margin-top: 29px;
     margin-right: 20px;
     text-align: center;
-    box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.1);
+    box-shadow: 10px 32px 72px rgba(51, 51, 51,0.05);
     border-radius: 10px;
 }
 .choose-product-item .cover{
@@ -278,5 +278,52 @@ header{
     font-weight: normal;
     font-size: 14px;
     line-height: 28px;
+    color: #999999;
+}
+
+    /* ----------testimonial---------- */
+.row-testimonial{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.testimonial-content{
+    width: 780px;
+    padding: 37px 120px 35px;
+    box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.05);
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+.testimonial-content .ratting{
+    margin: 0 auto 16px;
+}
+.testimonial-content .testimonial-msg{
+    margin: 0 auto 16px;
+    width: 555px;
+    overflow-wrap: normal;
+    line-height: 28px;
+    font-weight: normal;    
+    font-size: 18px;
+    color: #333333;
+}
+.testimonial-content .user{
+    width: 155px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial-content .user .img-user{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+    margin-right: 10px;
+    float: left;
+}
+.testimonial-content .user .name-user{
+    padding-top: 3px;
+    font-size: 12px;
+}
+.testimonial-content .user .alamat-user{
+    font-size: 10px;
     color: #999999;
 }
