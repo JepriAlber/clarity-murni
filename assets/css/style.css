@@ -868,18 +868,19 @@ footer .copyright{
     }
     .clarity-footer{
         margin: 0 auto;
-        width: 434px;
-        padding: 66px 73px 45px;
+        width: 374px;
+        padding: 66px 0 45px;
     }
     .clarity-footer .deskripsi{
+        margin: 0 auto;
         width: 292px;
         font-size: 12px;
     }
     .info-footer{
-        padding: 0px 158px 0px;
+        padding: 0px 0 0px;
     }
     .help-footer{
-        padding: 35px 148px 39px;
+        padding: 35px 0 39px;
     }
     footer li{
         font-size: 12px;
@@ -887,7 +888,7 @@ footer .copyright{
         margin-bottom: 14px;
     }
     .contact-footer{
-        padding: 0px 100px 50px;
+        padding: 0px 0 50px;
     }
     .contact-footer .isi{
         font-size: 12px;
