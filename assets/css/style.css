@@ -353,9 +353,8 @@ main{
     color: #333333;
 }
 .testimonial-content .user{
-    width: 155px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
 .testimonial-content .user .img-user{
     width: 40px;
@@ -363,13 +362,15 @@ main{
     margin-right: 10px;
     border-radius: 100%;
     background-color: #C4C4C4;
-    float: left;
 }
-.testimonial-content .user .name-user{
-    padding-top: 3px;
+.bio-user{
+    margin-top: 2px;
+    text-align: left;
+}
+.user .bio-user .name-user{
     font-size: 12px;
 }
-.testimonial-content .user .alamat-user{
+.user .bio-user .alamat-user{
     font-size: 10px;
     color: #999999;
 }
@@ -685,10 +686,7 @@ footer .copyright{
         line-height: 18px;
     }
     .price-product{
-        margin-top: -42px;
-        float: right;
         font-size: 14px;
-        line-height: 21px;
     }
     .btn-cart{
         margin-top: 19px;
@@ -791,25 +789,12 @@ footer .copyright{
         font-size: 12px;
         line-height: 22px; 
     }
-    .testimonial-content .user{
-        width: 155px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .testimonial-content .user .img-user{
-        width: 40px;
-        height: 40px;
-        margin-right: 0;
-        border-radius: 100%;
-    }
     .testimonial-content .user .name-user{
-        padding-top: 7px;
         font-size: 10px;
         line-height: 15px;
     }
     .testimonial-content .user .alamat-user{
         font-size: 8px;
-        line-height: 12px;
     }
     /* -------subscribe------ */
 
@@ -828,7 +813,7 @@ footer .copyright{
         line-height: 22px;
     }
     .subscribe .email{
-        width: 324.99px;
+        width: 85%;
         height: 39.54px;
     }
     .subscribe .email img{
