@@ -24,10 +24,13 @@ header{
     color: #415123;
 }
 .nav {
-    height: 75px;;
+    height: 75px;
     width: 100%;
     background-color: #FFF;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   
   .nav > .nav-header {
@@ -45,7 +48,6 @@ header{
   
   .nav > .nav-links {
     display: inline;
-    float: right;
     font-size: 18px;
   }
   .nav > .nav-links > ul li a{
