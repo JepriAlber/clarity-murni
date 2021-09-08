@@ -453,8 +453,15 @@ footer li {
 }
 .row-footer{
     display: flex;
-    justify-content: space-between;
-    align-items: stretch
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.row-footer hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #69803E;
+    background-color: #69803E;
 }
 footer .title-footer{
     font-weight: 500;
@@ -466,6 +473,7 @@ footer .title-footer{
     width: 434px;
     padding: 75px 51px 58px;
 }
+
 .clarity-footer .deskripsi{
     width: 292px;
     overflow-wrap: normal;
@@ -529,9 +537,7 @@ hr{
 footer .copyright{
     padding-top: 21px;
     padding-bottom: 21px;
-    text-align: center;
     font-size: 14px;
-    line-height: 21px;
     color: #CBD8B4;
 }
 .copyright a {
@@ -548,6 +554,7 @@ footer .copyright{
     }
     .nav {
         position: relative;
+        opacity: 1;
     }
     .nav-title img {
         width: 75px;
@@ -856,7 +863,6 @@ footer .copyright{
         text-align: center;
     }
     .clarity-footer{
-        margin: 0 auto;
         width: 100%;
         padding: 66px 0 45px;
     }
@@ -866,9 +872,11 @@ footer .copyright{
         font-size: 12px;
     }
     .info-footer{
-        padding: 0px 0 0px;
+        width: 100%;
+        padding: 0;
     }
     .help-footer{
+        width: 100%;
         padding: 35px 0 39px;
     }
     footer li{
@@ -891,17 +899,8 @@ footer .copyright{
     footer .sosmed{
         margin: 0px 10px;
     }
-    hr{
-        margin-left: 60px;
-        margin-right: 60px;
-        background-color: #69803E;
-        border: 1px solid #69803E;
-    }
     footer .copyright{
-        padding-top: 21px;
-        padding-bottom: 21px;
-        text-align: center;
+        width: 100%;
         font-size: 11px;
-        line-height: 16px;
     }
 }
