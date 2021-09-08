@@ -26,31 +26,38 @@ header{
 .nav {
     height: 75px;
     width: 100%;
-    background-color: #FFF;
-    position: relative;
+    padding: 20px;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+    background-color: #FFF;
+    opacity: 0.8;
+    z-index: 10;
+}
+.nav-title img {
+    width: 120px;
+    height: 41px;
+}
   
-  .nav > .nav-header {
+.nav > .nav-header {
     display: inline;
-  }
+}
   
-  .nav > .nav-header > .nav-title {
+.nav > .nav-header > .nav-title {
     display: inline-block;
     padding: 18px;
-  }
+}
   
-  .nav > .nav-btn {
+.nav > .nav-btn {
     display: none;
-  }
+}
   
-  .nav > .nav-links {
+.nav > .nav-links {
     display: inline;
     font-size: 18px;
-  }
-  .nav > .nav-links > ul li a{
+}
+.nav > .nav-links > ul li a{
     color: #415123;
     display: block;
     padding: 0 8px;
@@ -58,37 +65,33 @@ header{
     font-size: 18px;
     text-decoration: none;
 
-  }
-  .nav > .nav-links > ul{
+}
+.nav > .nav-links > ul{
     padding: 0;
     margin-top: 5px;
     list-style: none;
     position: relative;
-    
-  }
-  .nav > .nav-links > ul li{
+
+}
+.nav > .nav-links > ul li{
     display: inline-block;
-    
-    
-  }
-  .nav > .nav-links > ul li:hover{
-      border-radius: 5px;
-  }
-  
-  .nav > #nav-check {
+}
+.nav > .nav-links > ul li:hover{
+    border-radius: 5px;
+}
+.nav > #nav-check {
     display: none;
-  }
+}
+.nav .nav-links ul a.icon{
+    margin-left: 80px;
+    margin-right: 10px;
+}
 
- .nav .nav-links ul a.icon{
- margin-left: 80px;
- margin-right: 10px;
- }
-
- .nav .nav-links ul a i{
+.nav .nav-links ul a i{
     border-radius: 50px;
     padding: 7px;
     margin-left: 5px;
- }
+}
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
     width: 100%;
@@ -543,6 +546,13 @@ footer .copyright{
         margin-left: 0;
         margin-right: 0;
     }
+    .nav {
+        position: relative;
+    }
+    .nav-title img {
+        width: 75px;
+        height: 26px;
+    }
     .nav > .nav-btn {
         display: inline-block;
         position: absolute;
@@ -589,7 +599,7 @@ footer .copyright{
             background-color: #fff;
       }
       .nav > .nav-links > ul li a{
-            margin-left: 2%;
+            margin-left: 6%;
             font-size: 12px;
             line-height: 10px;
       }
