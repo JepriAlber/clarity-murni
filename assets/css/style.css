@@ -452,7 +452,7 @@ footer li {
 }
 .row-footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     flex-wrap: wrap;
 }
@@ -885,7 +885,6 @@ footer .copyright{
     }
     .contact-footer .isi{
         font-size: 12px;
-        line-height: 18px;
     }
     .telepon, .email{
         justify-content: center;
