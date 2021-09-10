@@ -109,6 +109,18 @@ a {
 .toggle-onactive .hamburger-menu span:last-child {
     transform: rotate(-45deg) translate(8px, -8px);
 }
+/* ----------sticky--------------------- */
+.stiky-active{
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 10;    
+    height: 110px !important;
+}
+.stiky-scroll{
+    background-color: #fff9f2;
+    opacity: 0.9;
+}
 
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
