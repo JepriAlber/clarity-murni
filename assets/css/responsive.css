@@ -1,0 +1,448 @@
+@media all and (min-width:1600px) {
+    .site-header{
+        height: 100px;
+    }
+    .site-header .main-navigation {
+        position: relative;
+        width: auto;
+        margin-left: auto;
+        }
+    .site-header .hamburger-menu {
+        display: none;
+    }
+    .site-header .nav-list .nav-item{
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+@media all and (min-width: 1200px) and (max-width: 1599px) {
+    .site-header{
+        height: 100px;
+    }
+    .site-header .main-navigation {
+        position: relative;
+        width: auto;
+        margin-left: auto;
+        }
+    .site-header .hamburger-menu {
+        display: none;
+    }
+    .site-header .nav-list .nav-item{
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+}
+
+/* --------------------------tablet------------------------------- */
+@media all and (min-width:901px) and (max-width:1199px){
+     /* ----------nabar/ header--------------- */
+     .site-header.toggle-onactive {
+        background-color: #fff;
+    }
+    .site-header {
+        height: 85px;
+    }
+    .site-header .main-navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100%);
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: .3s;
+    }
+    .site-header .main-navigation {
+        align-items: flex-start;
+    }
+     .site-header.toggle-onactive .main-navigation {
+         opacity: 1;
+         visibility: visible;
+         transform: translateY(0);
+     }
+     .site-header .main-navigation .nav-menu {
+        width: 100%;
+        padding: 20px 20px 30px;
+        max-height: calc(100vh - 80px);
+        overflow: hidden auto;
+    }
+    .site-header .main-navigation {
+        align-items: flex-start;
+    }
+    .site-header .nav-list .nav-item{
+        margin-left: 20px;
+    }
+    .main-navigation .nav-item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+    /* --------------- shop product-------------------- */
+    .row-product {
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+    .product-shop {
+        margin: 0px auto 45px;
+    }
+    /* -----------choose product----------- */
+    .row-choose-product {
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    /* ------- subscribe-------- */
+    .subscribe .email input {
+        height: 4vh;
+    }
+    /* ------footer------- */
+    .clarity-footer {
+    width: 30%;
+    padding: 75px 14px 58px;
+    }
+    .info-footer {
+        width: 15%;
+        padding: 75px 25px 58px;
+    }
+    .help-footer {
+        width: 18%;
+        padding: 75px 20px 58px;
+    }
+    .contact-footer {
+        width: 24%;
+        padding: 75px 21px 58px;
+    }
+}
+
+/* ---------------------Mobile------------------------------- */
+@media all and (max-width:900px) {
+    /* ----------nabar/ header--------------- */
+    .site-header .nav-logo img {
+        width: 75px;
+        height: 26px;
+    }
+    .site-header .nav-item:not([class*="btn-"]) a {
+        font-size: 12px;
+    }
+    .hamburger-menu span {
+        width: 80%;
+    }
+    
+    .hamburger-menu span:nth-child(2) {
+        width: calc(100% - 20px);
+    }
+    
+    .site-header.toggle-onactive {
+        background-color: #fff;
+    }
+    .site-header {
+        height: 85px;
+    }
+    .site-header .main-navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100%);
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: .2s;
+    }
+    .site-header .main-navigation {
+        align-items: flex-start;
+    }
+     .site-header.toggle-onactive .main-navigation {
+         opacity: 1;
+         visibility: visible;
+         transform: translateY(0);
+     }
+     .site-header .main-navigation .nav-menu {
+        width: 100%;
+        padding: 20px 20px 30px;
+        max-height: calc(100vh - 80px);
+        overflow: hidden auto;
+    }
+    .site-header .main-navigation {
+        align-items: flex-start;
+    }
+    .site-header .nav-list .nav-item{
+        margin-left: 20px;
+    }
+    .main-navigation .nav-item:not(:last-child) {
+        margin-bottom: 14px;
+    }
+        /* -----------top wrapper---------------- */
+    .top-wrapper{
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+        text-align: center;
+    }
+    .top-wrapper-content{
+        margin: 0 auto;
+        padding-top: 150px;
+        width: 309px;
+        height: 194px;
+        overflow-wrap: normal;
+    }
+    .top-wrapper-content h1{
+        font-size: 28px;
+        line-height: 40px; 
+    }
+    .top-wrapper-content p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .top-wrapper-btn{
+        margin-top: 18px;
+    }
+    .btn{
+        margin-right: 18px;
+        padding: 11px 28px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    /* ----------------------------content------------------------------- */
+    .title-content{
+        margin: 0 auto;
+        width: 181px;
+        overflow-wrap: normal;
+        margin-top: 50px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .p-title-content{
+        margin: 0 auto;
+        width: 286px;
+        overflow-wrap: normal;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .row-product{
+        margin-top: 37px;
+        display: flex;
+        flex-direction: column;
+    }
+    .product-shop{    
+        width: 75%;
+        margin: 0 auto 50px ;
+        box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.03);
+    }
+    .product{
+        margin: 14px auto 0px;
+        width: 90%;
+        height: 188px;
+        padding: 34px;
+    }
+    .product img{
+        width: 85px;
+    }
+    .ket-product{
+        margin:14px;
+    }
+    .title-product,
+    .unit-product{
+        text-align: left;
+    }
+    .title-product{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .unit-product{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .price-product{
+        font-size: 14px;
+    }
+    .btn-cart{
+        margin-top: 19px;
+        width: 100%;
+        height: 5vh;
+        font-size: 11px;
+        line-height: 16px;
+    }
+            /* ------are you------- */
+    .row-are-you{
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .row-are-you h3{
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .row-are-you p{
+        margin: 0 auto 20px;
+        width: 240px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .young{
+        width: 100%;
+        height: 208px;
+    }
+    .elderly{
+        width: 100%;
+        height: 208px;
+    }
+    .row-are-you .are-you-content{
+        padding: 36px 56px;    
+        position: relative;
+        z-index: 1;
+    }
+    .btn-are-you{
+        border: 1px solid #FFFFFF;
+        padding: 9px 26px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+    /* ---------choose product--------- */
+    .row-choose-product{
+        display: flex;
+        flex-direction: column;
+    }
+    .choose-product-item{
+        width: 85%;
+        height: 205px;
+        margin: 29px auto 0;
+        text-align: center;
+        box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
+    }
+    .choose-product-item .cover{
+        margin-top: 20px;
+        margin-bottom: 26px;
+        width: 60px;
+        height: 60px;
+    }
+    .cover img{
+        padding-top: 14px;
+    }
+    .choose-product-item h5{
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .choose-product-item p{
+        width: 235px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+        /* ----------testimonial---------- */
+    .testimonial-content{
+        width: 85%;
+        padding: 37px 0px 40px;
+    }
+    .testimonial-content .ratting{
+        margin: 0 auto 5px;
+    }
+    .ratting img{
+        width: 11.99px;
+        height: 10.53px;
+    }
+    .testimonial-content .testimonial-msg{
+        margin: 0 auto 10px;
+        width: 263px;
+        font-size: 12px;
+        line-height: 22px; 
+    }
+    .testimonial-content .user .name-user{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .testimonial-content .user .alamat-user{
+        font-size: 8px;
+    }
+    /* -------subscribe------ */
+    .subscribe{
+        width: 100%;
+        height: 402px;
+        text-align: center;
+    }
+    .subscribe .title-content{
+        width: 216px;
+    }
+    .subscribe .title-content-isi{
+        margin: 10px auto;
+        width: 248px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .subscribe .email{
+        width: 85%;
+        height: 39.54px;
+    }
+    .subscribe .email img{
+        width: 4%;
+    }
+    .subscribe .email input{
+        width: 40vw;
+        height: 3vh;
+        font-size: 9px;
+    }
+    .subscribe .btn-email{
+        width: 78px;
+        height: 24.16px;
+        border-radius: 5px;
+        font-size: 9px;
+    }
+      /* ----------footer---------- */
+    footer{
+        text-align: center;
+    }
+   .row-footer{
+        flex-direction: column;
+    }
+    footer .title-footer{
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+    .clarity-footer{
+        width: 100%;
+        padding: 66px 0 45px;
+    }
+    .clarity-footer .deskripsi{
+        margin: 0 auto;
+        width: 292px;
+        font-size: 12px;
+    }
+    .info-footer{
+        width: 100%;
+        padding: 0;
+    }
+    .help-footer{
+        width: 100%;
+        padding: 35px 0 39px;
+    }
+    footer li{
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 14px;
+    }
+    .contact-footer{
+        padding: 0px 0 50px;
+    }
+    .contact-footer .isi{
+        font-size: 12px;
+    }
+    .telepon, .email{
+        justify-content: center;
+    }
+    .contact-footer .media{
+        justify-content: center;
+        margin-top: 21px;
+        display: flex;
+    }
+    footer .sosmed{
+        margin: 0px 10px;
+    }
+    footer .copyright{
+        width: 100%;
+        font-size: 11px;
+    }
+}

@@ -15,77 +15,101 @@ a {
     margin-right: 51px;
 }
 /* -----------------Header------------------------------ */
-header{
-    height: 75px;
-    line-height: 27px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #415123;
+.site-header{
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 6%);
 }
-.nav {
-    height: 75px;
-    width: 100%;
-    padding: 20px;
-    position: fixed;
+.site-header>.navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #FFF;
-    opacity: 0.8;
-    z-index: 10;
+    height: 100%;
 }
-.nav-title img {
-    width: 120px;
-    height: 41px;
+.navbar{
+    width: calc(100% - 40px);
+    margin: 0 auto;
 }
-.nav > .nav-header {
-    display: inline;
-} 
-.nav > .nav-header > .nav-title {
-    display: inline-block;
-    padding: 18px;
+.site-header .nav-logo{
+    margin: 23px;
 }
-.nav > .nav-btn {
-    display: none;
-} 
-.nav > .nav-links {
-    display: inline;
-    font-size: 18px;
+.site-header .nav-logo img{
+    width: 142px;
+    height: 48px;
+    object-fit: contain;
+    background-size: contain;
+    object-position: left;
 }
-.nav > .nav-links > ul li a{
-    color: #415123;
-    display: block;
-    padding: 0 8px;
-    line-height: 64px;
-    font-size: 18px;
-    text-decoration: none;
+.site-header .main-navigation {
+    display: flex;
+    align-items: center;
 }
-.nav > .nav-links > ul{
-    padding: 0;
-    margin-top: 5px;
-    list-style: none;
+.site-header .nav-list{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-left: 0;
+}
+
+.site-header .nav-list .nav-item{
+    width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.site-header .nav-item:not([class*="btn-"]) a {
+    color: #415123;
+    font-size: 18px;
+    font-weight: 500;
+}
+.site-header .nav-list a {
+    width: 100%;
+    padding-right: 20px;
+    
+}
+.hamburger-menu {
+    width: 50px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-left: auto;
+}
+.hamburger-menu span {
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #415123;
+    transform: rotate(0deg) translate(0px);
+    transition: all .3s;
+}
+.hamburger-menu span:not(:last-child) {
+    margin-bottom: 8px;
+}
 
-}
-.nav > .nav-links > ul li{
-    display: inline-block;
-}
-.nav > .nav-links > ul li:hover{
-    border-radius: 5px;
-}
-.nav > #nav-check {
-    display: none;
-}
-.nav .nav-links ul a.icon{
-    margin-left: 80px;
-    margin-right: 10px;
+.hamburger-menu span:nth-child(2) {
+    width: calc(100% - 10px);
 }
 
-.nav .nav-links ul a i{
-    border-radius: 50px;
-    padding: 7px;
-    margin-left: 5px;
+.toggle-onactive .hamburger-menu span{
+    background-color:#7a1d00;
 }
+.toggle-onactive .hamburger-menu span:first-child {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.toggle-onactive .hamburger-menu span:nth-child(2) {
+    transform: translateX(50%);
+    opacity: 0;
+}
+
+.toggle-onactive .hamburger-menu span:last-child {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
     width: 100%;
@@ -535,447 +559,3 @@ footer .copyright{
     color: #CBD8B4;
 }
 
-/* --------------------------tablet------------------------------- */
-@media all and (min-width:901px) and (max-width:1199px){
-     /* ----------nabar/ header--------------- */
-    .nav {
-        position: relative;
-        opacity: 1;
-    }
-    .nav > .nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 11px;
-    }
-    .nav > .nav-btn > label {
-        padding: 14px;
-        display: inline-block;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-        background-color: #fff;
-    }
-    .nav > .nav-btn > label > span {
-        width: 25px;
-        display: block;
-        height: 10px;
-        border-top: 2px solid #415123;
-    }
-    .nav > .nav-links {
-        display: block;
-        width: 100%;
-        height: 0px;
-        top: 75px;
-        left: 0px;
-        position: absolute;
-        overflow-y: hidden;
-        transition: all 0.3s ease-in;
-        background-color: #fff;
-    }
-    .nav > .nav-links > ul li a {
-        display: block;
-        width: 100%;
-    }
-
-    /*   */
-    .nav > .nav-links > ul li{
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-        background-color: #fff;
-    }
-    .nav > .nav-links > ul li a{
-        margin-left: 4%;
-        line-height: 18px;
-    }
-    .nav .nav-links ul a.icon{
-        line-height: 15px;
-    }
-
-    /*   */
-    .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
-
-    /* --------------- shop product-------------------- */
-    .row-product {
-        flex-flow: wrap;
-        justify-content: space-around;
-    }
-    .product-shop {
-        margin: 0px auto 45px;
-    }
-    /* -----------choose product----------- */
-    .row-choose-product {
-        justify-content: space-around;
-        flex-flow: wrap;
-    }
-    /* ------- subscribe-------- */
-    .subscribe .email input {
-        height: 4vh;
-    }
-    /* ------footer------- */
-    .clarity-footer {
-    width: 30%;
-    padding: 75px 14px 58px;
-    }
-    .info-footer {
-        width: 15%;
-        padding: 75px 25px 58px;
-    }
-    .help-footer {
-        width: 18%;
-        padding: 75px 20px 58px;
-    }
-    .contact-footer {
-        width: 24%;
-        padding: 75px 21px 58px;
-    }
-}
-
-/* ---------------------Mobile------------------------------- */
-@media all and (max-width:900px) {
-    /* ----------nabar/ header--------------- */
-    .container{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .nav {
-        position: relative;
-        opacity: 1;
-    }
-    .nav-title img {
-        width: 75px;
-        height: 26px;
-    }
-    .nav > .nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 11px;
-    }
-    .nav > .nav-btn > label {
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-        display: inline-block;
-    }
-    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-        background-color: #fff;
-    }
-    .nav > .nav-btn > label > span {
-        width: 25px;
-        display: block;
-        height: 10px;
-        border-top: 2px solid #415123;
-    }
-    .nav > .nav-links {
-        display: block;
-        width: 100%;
-        height: 0px;
-        top: 75px;
-        left: 0px;
-        position: absolute;
-        overflow-y: hidden;
-        transition: all 0.3s ease-in;
-        background-color: #fff;
-    }
-    .nav > .nav-links > ul li a {
-        display: block;
-        width: 100%;
-        line-height: 33px;
-    }
-    /*   */
-      .nav > .nav-links > ul li{
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            background-color: #fff;
-      }
-      .nav > .nav-links > ul li a{
-            margin-left: 6%;
-            font-size: 12px;
-            line-height: 10px;
-      }
-      .nav .nav-links ul a.icon{
-            line-height: 15px;
-      }
-    /*   */
-    .nav > #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
-        /* -----------top wrapper---------------- */
-    .top-wrapper{
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-        text-align: center;
-    }
-    .top-wrapper-content{
-        margin: 0 auto;
-        padding-top: 150px;
-        width: 309px;
-        height: 194px;
-        overflow-wrap: normal;
-    }
-    .top-wrapper-content h1{
-        font-size: 28px;
-        line-height: 40px; 
-    }
-    .top-wrapper-content p{
-        font-size: 12px;
-        line-height: 22px;
-    }
-    .top-wrapper-btn{
-        margin-top: 18px;
-    }
-    .btn{
-        margin-right: 18px;
-        padding: 11px 28px;
-        text-align: center;
-        font-size: 11px;
-        line-height: 16px;
-    }
-    /* ----------------------------content------------------------------- */
-    .title-content{
-        margin: 0 auto;
-        width: 181px;
-        overflow-wrap: normal;
-        margin-top: 50px;
-        font-size: 28px;
-        line-height: 40px;
-    }
-    .p-title-content{
-        margin: 0 auto;
-        width: 286px;
-        overflow-wrap: normal;
-        font-size: 12px;
-        line-height: 22px;
-    }
-    .row-product{
-        margin-top: 37px;
-        display: flex;
-        flex-direction: column;
-    }
-    .product-shop{    
-        width: 75%;
-        margin: 0 auto 50px ;
-        box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.03);
-    }
-    .product{
-        margin: 14px auto 0px;
-        width: 90%;
-        height: 188px;
-        padding: 34px;
-    }
-    .product img{
-        width: 85px;
-    }
-    .ket-product{
-        margin:14px;
-    }
-    .title-product,
-    .unit-product{
-        text-align: left;
-    }
-    .title-product{
-        font-size: 14px;
-        line-height: 21px;
-    }
-    .unit-product{
-        font-size: 12px;
-        line-height: 18px;
-    }
-    .price-product{
-        font-size: 14px;
-    }
-    .btn-cart{
-        margin-top: 19px;
-        width: 100%;
-        height: 5vh;
-        font-size: 11px;
-        line-height: 16px;
-    }
-            /* ------are you------- */
-    .row-are-you{
-        margin-top: 25px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .row-are-you h3{
-        font-size: 20px;
-        line-height: 36px;
-    }
-    .row-are-you p{
-        margin: 0 auto 20px;
-        width: 240px;
-        font-size: 11px;
-        line-height: 15px;
-    }
-    .young{
-        width: 100%;
-        height: 208px;
-    }
-    .elderly{
-        width: 100%;
-        height: 208px;
-    }
-    .row-are-you .are-you-content{
-        padding: 36px 56px;    
-        position: relative;
-        z-index: 1;
-    }
-    .btn-are-you{
-        border: 1px solid #FFFFFF;
-        padding: 9px 26px;
-        font-size: 11px;
-        line-height: 16px;
-    }
-    /* ---------choose product--------- */
-    .row-choose-product{
-        display: flex;
-        flex-direction: column;
-    }
-    .choose-product-item{
-        width: 85%;
-        height: 205px;
-        margin: 29px auto 0;
-        text-align: center;
-        box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.03);
-    }
-    .choose-product-item .cover{
-        margin-top: 20px;
-        margin-bottom: 26px;
-        width: 60px;
-        height: 60px;
-    }
-    .cover img{
-        padding-top: 14px;
-    }
-    .choose-product-item h5{
-        margin-bottom: 10px;
-        font-size: 18px;
-        line-height: 27px;
-    }
-    .choose-product-item p{
-        width: 235px;
-        font-size: 12px;
-        line-height: 22px;
-    }
-        /* ----------testimonial---------- */
-    .testimonial-content{
-        width: 85%;
-        padding: 37px 0px 40px;
-    }
-    .testimonial-content .ratting{
-        margin: 0 auto 5px;
-    }
-    .ratting img{
-        width: 11.99px;
-        height: 10.53px;
-    }
-    .testimonial-content .testimonial-msg{
-        margin: 0 auto 10px;
-        width: 263px;
-        font-size: 12px;
-        line-height: 22px; 
-    }
-    .testimonial-content .user .name-user{
-        font-size: 10px;
-        line-height: 15px;
-    }
-    .testimonial-content .user .alamat-user{
-        font-size: 8px;
-    }
-    /* -------subscribe------ */
-    .subscribe{
-        width: 100%;
-        height: 402px;
-        text-align: center;
-    }
-    .subscribe .title-content{
-        width: 216px;
-    }
-    .subscribe .title-content-isi{
-        margin: 10px auto;
-        width: 248px;
-        font-size: 12px;
-        line-height: 22px;
-    }
-    .subscribe .email{
-        width: 85%;
-        height: 39.54px;
-    }
-    .subscribe .email img{
-        width: 4%;
-    }
-    .subscribe .email input{
-        width: 40vw;
-        height: 3vh;
-        font-size: 9px;
-    }
-    .subscribe .btn-email{
-        width: 78px;
-        height: 24.16px;
-        border-radius: 5px;
-        font-size: 9px;
-    }
-      /* ----------footer---------- */
-    footer{
-        text-align: center;
-    }
-   .row-footer{
-        flex-direction: column;
-    }
-    footer .title-footer{
-        margin-bottom: 15px;
-        font-size: 14px;
-        line-height: 21px;
-        text-align: center;
-    }
-    .clarity-footer{
-        width: 100%;
-        padding: 66px 0 45px;
-    }
-    .clarity-footer .deskripsi{
-        margin: 0 auto;
-        width: 292px;
-        font-size: 12px;
-    }
-    .info-footer{
-        width: 100%;
-        padding: 0;
-    }
-    .help-footer{
-        width: 100%;
-        padding: 35px 0 39px;
-    }
-    footer li{
-        font-size: 12px;
-        line-height: 18px;
-        margin-bottom: 14px;
-    }
-    .contact-footer{
-        padding: 0px 0 50px;
-    }
-    .contact-footer .isi{
-        font-size: 12px;
-    }
-    .telepon, .email{
-        justify-content: center;
-    }
-    .contact-footer .media{
-        justify-content: center;
-        margin-top: 21px;
-        display: flex;
-    }
-    footer .sosmed{
-        margin: 0px 10px;
-    }
-    footer .copyright{
-        width: 100%;
-        font-size: 11px;
-    }
-}
