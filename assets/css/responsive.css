@@ -170,12 +170,9 @@
      }
      .site-header .main-navigation .nav-menu {
         width: 100%;
-        padding: 20px 20px 30px;
+        padding: 10px 20px 10px;
         max-height: calc(100vh - 80px);
         overflow: hidden auto;
-    }
-    .site-header .main-navigation {
-        align-items: flex-start;
     }
     .site-header .nav-list .nav-item{
         margin-left: 20px;
@@ -346,7 +343,7 @@
         /* ----------testimonial---------- */
     .testimonial-content{
         width: 85%;
-        padding: 37px 0px 40px;
+        padding: 0px;
     }
     .testimonial-content .ratting{
         margin: 0 auto 5px;
