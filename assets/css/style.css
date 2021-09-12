@@ -49,7 +49,6 @@ a {
     align-items: center;
     padding-left: 0;
 }
-
 .site-header .nav-list .nav-item{
     width: 100%;
     position: relative;
@@ -93,19 +92,16 @@ a {
 .hamburger-menu span:nth-child(2) {
     width: calc(100% - 10px);
 }
-
 .toggle-onactive .hamburger-menu span{
     background-color:#7a1d00;
 }
 .toggle-onactive .hamburger-menu span:first-child {
     transform: rotate(45deg) translate(8px, 8px);
 }
-
 .toggle-onactive .hamburger-menu span:nth-child(2) {
     transform: translateX(50%);
     opacity: 0;
 }
-
 .toggle-onactive .hamburger-menu span:last-child {
     transform: rotate(-45deg) translate(8px, -8px);
 }
@@ -121,7 +117,6 @@ a {
     background-color: #fff9f2;
     opacity: 0.9;
 }
-
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
     width: 100%;
@@ -195,7 +190,7 @@ main{
     margin: 0 10px;
     align-items: stretch;
     justify-content: center;
-    box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.05);
+    box-shadow: 10px 10px 5px rgb(51 51 51 / 0.1);
     border-radius: 10px;  
     background-color: #FFFFFF;
 }
@@ -259,7 +254,7 @@ main{
 .row-are-you h3{
     font-weight: bold;
     font-size: 36px;
-    line-height: 64px;
+    line-height: 40px;
 }
 .row-are-you p{
     margin-bottom: 30px;
@@ -332,7 +327,7 @@ main{
     margin-top: 29px;
     margin-right: 20px;
     text-align: center;
-    box-shadow: 10px 32px 72px rgba(51, 51, 51,0.05);
+    box-shadow: 10px 10px 5px rgb(51 51 51 / 0.1);
     border-radius: 10px;
 }
 .choose-product-item .cover{
@@ -364,13 +359,13 @@ main{
 }
     /* ----------testimonial---------- */
 .row-testimonial{
-    margin-top: 60px;
-}
+    margin-bottom: 110px;
+ }
 .testimonial-content{
     margin: 0 auto;
     width: 780px;
     padding: 37px 120px 35px;
-    box-shadow: 10px 32px 72px rgba(51, 51, 51, 0.05);
+    box-shadow: 10px 10px 5px rgb(51 51 51 / 0.1);
     border-radius: 10px;
     background-color: #FFFFFF;
 }
@@ -409,6 +404,9 @@ main{
     color: #999999;
 }
     /* -------subscribe------ */
+.row-subscribe {
+    margin-top: 100px;
+}
 .subscribe{
     width: 100%;
     background: url(../img/newsletter-crop.png) center;
@@ -417,12 +415,10 @@ main{
     position: relative;
 }
 .subscribe .isi{
-    margin-top: 100px;
-    padding-top: 64px;
-    padding-bottom: 77px;
+    padding-top: 10px;
+    padding-bottom: 90px;
     position: relative;
     z-index: 1;
-    
 }
 .subscribe::after{
     content: '';
@@ -478,7 +474,6 @@ footer li {
 }
 .row-footer{
     display: flex;
-    justify-content: space-around;
     align-items: stretch;
     flex-wrap: wrap;
 }
@@ -570,4 +565,3 @@ footer .copyright{
 .copyright a {
     color: #CBD8B4;
 }
-
