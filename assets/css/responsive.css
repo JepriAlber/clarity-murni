@@ -19,6 +19,7 @@
     .row-footer {
         justify-content: space-around;
     }
+    
 }
 @media all and (min-width: 1200px) and (max-width: 1599px) {
     .site-header{
@@ -49,7 +50,7 @@
         background-color: #fff;
     }
     .site-header {
-        height: 90px;
+        height: 100px;
         transition: .7s;
     }
     .site-header .main-navigation {
@@ -71,6 +72,7 @@
          opacity: 1;
          visibility: visible;
          transform: translateY(0);
+         z-index: 1;
      }
      .site-header .main-navigation .nav-menu {
         width: 100%;
@@ -87,10 +89,45 @@
     .main-navigation .nav-item:not(:last-child) {
         margin-bottom: 14px;
     }
+    /* ------------top wrapper--------------- */
+    .top-wrapper-content{
+        margin: 0 auto;
+    }
+    .top-wrapper-content {
+        text-align: center;
+        padding: 30px;
+        width: 595px;
+        height: calc(38vh - 100px);
+        transform: translate(0%, 74%);
+        position: relative;
+        z-index: 0;
+    }
+    .top-wrapper-content h1 {
+        line-height: 54px;
+        font-size: 45px;
+    }
+    .top-wrapper-content p {
+        line-height: 23px;
+        font-size: 13px;
+    }
+    .top-wrapper-btn {
+        margin-top: 20px;
+    }
+    .btn {
+        padding: 13px 16px;
+        line-height: 20px;
+        font-size: 14px;
+    }
     /* ----------content------------------ */
+    .title-content {
+        font-size: 37px;
+        line-height: 60px;
+    }
     .p-title-content {
         width: 60%;
         margin: 0 auto;
+        font-size: 13px;
+        line-height: 26px;
     }
     /* --------------- shop product-------------------- */
     .row-product {
@@ -102,6 +139,22 @@
     }
     .row-product .product-shop:nth-child(3) {
         margin-bottom: 0px;
+    }
+    /* ---------------are you------------ */
+    .row-are-you h3 {
+        font-weight: bold;
+        font-size: 31px;
+        line-height: 36px;
+    }
+    .btn-are-you {
+        padding: 14px 23px;
+        line-height: 19px;
+        font-size: 15px;
+    }
+    .row-are-you p {
+        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 25px;
     }
     /* -----------choose product----------- */
     .row-choose-product {
@@ -115,6 +168,9 @@
     /* ------- subscribe-------- */
     .subscribe .email input {
         height: 4vh;
+    }
+    .subscribe .isi {
+        padding-bottom: 91px;
     }
     /* ------footer------- */
     .row-footer{   
@@ -135,6 +191,10 @@
     .contact-footer {
         width: 24%;
         padding: 75px 33px 58px;
+    }
+    /* -------footer------------ */
+    .row-footer hr {
+        width: 90%;
     }
 }
 /* ---------------------Mobile------------------------------- */
@@ -223,7 +283,7 @@
     }
     .btn{
         margin-right: 18px;
-        padding: 11px 28px;
+        padding: 11px 12px;
         text-align: center;
         font-size: 11px;
         line-height: 14px;
@@ -465,6 +525,9 @@
     }
     .telepon, .email{
         justify-content: center;
+    }
+    .telepon .isi, .email .isi{
+        margin-left: 5px;
     }
     .contact-footer .media{
         justify-content: center;
