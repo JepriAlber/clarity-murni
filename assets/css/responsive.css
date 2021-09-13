@@ -199,6 +199,9 @@
 }
 /* ---------------------Mobile------------------------------- */
 @media all and (max-width:900px) {
+    .rocket img {
+        width: 55px;
+    }
     .stiky-active{
         height: 93px !important;
     }
