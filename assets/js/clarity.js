@@ -11,7 +11,6 @@ $(document).ready(function(){
                     }else{
                         targetSticky.removeClass('stiky-scroll');
                     }
-
                 }else{
                     targetSticky.removeClass('stiky-active');
                     targetSticky.removeClass('stiky-scroll');
@@ -21,6 +20,10 @@ $(document).ready(function(){
     //---------navbar humburger---------
     $(".btn-toggle-state").click(function () {
         $("#site-header").toggleClass("toggle-onactive");
+    });
+    // ------------pop up-------------
+    $(".popup-toggle").click(function(){
+        $(".popup").toggleClass("popup-active");
     });
 
 });

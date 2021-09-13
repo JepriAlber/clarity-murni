@@ -478,4 +478,25 @@
         width: 100%;
         font-size: 11px;
     }
+    /* --------------pop up------------- */
+    .popup-heading {
+        font-size: 14px;
+    }
+    .popup-header {
+        padding: 20px;
+    }
+    .popup-close {
+        padding: 1.5em;
+    }
+    .popup-content, .popup-footer {
+        padding: 12px;
+    }
+    .popup-content {
+        text-indent: 15px;
+        font-size: 12px;
+    }
+    button.popup-toggle:not(.popup-close) {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }
