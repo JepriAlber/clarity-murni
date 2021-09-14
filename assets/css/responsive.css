@@ -135,7 +135,7 @@
         justify-content: space-around;
     }
     .product-shop {
-        margin: 0px auto 45px;
+        margin: 0px 20px !important;
     }
     .row-product .product-shop:nth-child(3) {
         margin-bottom: 0px;
@@ -208,6 +208,8 @@
     .container {
         margin: 0 auto;
     }
+
+
     /* ----------nabar/ header--------------- */
     .site-header {
         height: 85px;
@@ -261,6 +263,8 @@
     .main-navigation .nav-item:not(:last-child) {
         margin-bottom: 14px;
     }
+
+
         /* -----------top wrapper---------------- */
     .top-wrapper{
         height: calc(100vh - 50px);
@@ -291,6 +295,8 @@
         font-size: 11px;
         line-height: 14px;
     }
+
+
     /* ----------------------------content------------------------------- */
     .title-content{
         margin: 0 auto;
@@ -307,18 +313,21 @@
         font-size: 12px;
         line-height: 22px;
     }
+
+
+    /* ---------------------------------row product---------------------- */
     .row-product{
         margin-top: 37px;
         display: flex;
         flex-direction: column;
     }
     .product-shop{    
-        width: 75%;
-        margin: 0 auto;
+        width: 7% !important;
+        margin: 0 5px !important;
         box-shadow: 10px 10px 5px rgb(51 51 51 / 0.1);
     }
     .product-shop:not(:last-child) {
-        margin-bottom: 50px;
+        margin-left: 25px;
     }
     .product{
         margin: 14px auto 0px;
@@ -354,6 +363,13 @@
         font-size: 11px;
         line-height: 16px;
     }
+
+    /* -------------slick produk----------- */
+    .slick-product {
+        width: 80%;
+    }
+
+
             /* ------are you------- */
     .row-are-you{
         margin-top: 25px;
@@ -390,6 +406,8 @@
         font-size: 11px;
         line-height: 16px;
     }
+
+
     /* ---------choose product--------- */
     .row-choose-product{
         display: flex;
@@ -421,6 +439,8 @@
         font-size: 12px;
         line-height: 22px;
     }
+
+
         /* ----------testimonial---------- */
     .row-testimonial {
         margin-top: 35px;
@@ -452,6 +472,8 @@
     .testimonial-content .user .alamat-user{
         font-size: 8px;
     }
+
+
     /* -------subscribe------ */
     .subscribe{
         width: 100%;
@@ -485,6 +507,8 @@
         border-radius: 5px;
         font-size: 9px;
     }
+
+
       /* ----------footer---------- */
     footer{
         text-align: center;
@@ -544,6 +568,8 @@
         width: 100%;
         font-size: 11px;
     }
+
+    
     /* --------------pop up------------- */
     .popup-heading {
         font-size: 14px;

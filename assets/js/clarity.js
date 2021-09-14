@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    // -------------slick------------------
+    $('.slick-product').slick();
+
     //----------sticky------------
     var targetSticky = $('.site-header');
     var rocket = $('.rocket');
@@ -22,22 +25,30 @@ $(document).ready(function(){
                     rocket.removeClass('rocket-up-active');
                     rocket.removeClass('rocket-down-active');
                 }
-            positionScroll =  scroll;  
+            positionScroll =  scroll; 
         });
+
+
+
     //---------navbar humburger---------
     $(".btn-toggle-state").click(function () {
         $("#site-header").toggleClass("toggle-onactive");
     });
+
+
+
     // ------------pop up-------------
     $(".popup-toggle").click(function(){
         $(".popup").toggleClass("popup-active");
     });
+
+    
     // ---------------auto scroll up-----------
     $('.rocket').click(function(){
         $('html, body').animate({
             scrollTop: $('html').offset().top
          }, 'slow');
     });
-
-
+    
+    
 });
