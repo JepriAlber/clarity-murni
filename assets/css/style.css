@@ -10,6 +10,7 @@ li {
 a {
     text-decoration: none;
 }
+
 /* -----------------sroll-------------------- */
 .rocket{
     position: fixed;
@@ -45,6 +46,7 @@ a {
     margin-left: 51px;
     margin-right: 51px;
 }
+
 /* -----------------Header------------------------------ */
 .site-header{
     position: relative;
@@ -136,6 +138,7 @@ a {
 .toggle-onactive .hamburger-menu span:last-child {
     transform: rotate(-45deg) translate(8px, -8px);
 }
+
 /* ----------sticky--------------------- */
 .stiky-active{
     position: fixed;
@@ -148,6 +151,7 @@ a {
     background-color: #fff9f2;
     opacity: 0.9;
 }
+
 /* -----------------------Top Wrapper--------------------- */
 .top-wrapper{
     width: 100%;
@@ -193,6 +197,7 @@ a {
     color: #FFFFFF;
     background-color: #415123;
 }
+
 /* ---------------------content------------------- */
 main{
     text-align: center;
@@ -212,30 +217,29 @@ main{
     color: #999999;
 }
         /* ----product--- */
-    .product-shop:not(:first-child) {
-        margin-left: 50px;
-    }
+
 .row-product{
-    display: flex;
-    justify-content: space-evenly;
+    display: flex !important;
+    align-items: stretch !important;
+    flex-flow: row nowrap !important;
+    justify-content: flex-start !important;
 }
 .product-shop{
     width: 370px !important;
-    margin: 0;
+    margin: 20px;
     align-items: stretch;
     justify-content: center;
-    box-shadow: 10px 10px 5px rgb(51 51 51 / 0.1);
-    border-radius: 10px;  
+    box-shadow: 10px 10px 5px rgb(51 51 51 / 10%);
+    border-radius: 10px;
     background-color: #FFFFFF;
 }
 .product{
-    margin: 20px auto 0px;
-    width: 332.5px;
-    height: 298.85px;
+    width: 90%;
     padding: 50px;
     border-radius: 10px;
     background-color: #FFF9F2;
     display: inline-block;
+    margin: 18px;
 }
 .ket-product{
     margin: 20px;
@@ -279,6 +283,7 @@ main{
     background: #415123;
     color: #FFFFFF;
 }
+
     /* ------------slick product------------ */
 .slick-product {
     margin: 0 auto;
@@ -292,6 +297,7 @@ main{
 .slick-slide img {
     display: inline-block !important;
 }
+
         /* ------are you------- */
 .row-are-you{
     margin-top: 25px;
@@ -363,6 +369,7 @@ main{
     color: #333333;
     background-color: #415123;
 }
+
     /* ---------choose product--------- */
 .row-choose-product{
     display: flex;
@@ -404,6 +411,7 @@ main{
     line-height: 28px;
     color: #999999;
 }
+
     /* ----------testimonial---------- */
 .row-testimonial{
     margin-bottom: 110px;
@@ -450,6 +458,7 @@ main{
     font-size: 10px;
     color: #999999;
 }
+
     /* -------subscribe------ */
 .row-subscribe {
     margin-top: 100px;
@@ -511,6 +520,7 @@ main{
     background-color: #415123;
     color: #FFFFFF;
 }
+
     /* ----------footer---------- */
 footer{
     top: 0;
@@ -639,13 +649,11 @@ footer .copyright{
     opacity: 0;
     transition: visibility 0s linear 0.3s, opacity 0.3s;
 }
-
 .popup.popup-active .popup-overlay {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
 }
-
 .popup-wrapper {
     position: absolute;
     z-index: 9;
@@ -654,7 +662,6 @@ footer .copyright{
     width: 50%;
     background-color: #fff;
 }
-
 .popup-transition {
     transition: all 0.3s 0.12s;
     transform: translate(-50%, -45%);
