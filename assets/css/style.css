@@ -192,10 +192,14 @@ a {
     font-weight: 600;
     font-size: 16px;
     color: #415123;
+    transition: .3s;
 }
 .btn:hover{
+    margin-right: 26px;
+    padding: 18px 24px;
     color: #FFFFFF;
     background-color: #415123;
+    transition: .3s;
 }
 
 /* ---------------------content------------------- */
@@ -363,10 +367,12 @@ main{
     line-height: 24px;
     font-size: 16px;
     color: #FFFFFF;
+    transition: .3s;
 }
 .btn-are-you:hover{
-    border-color:#333333 ;
-    color: #333333;
+    padding: 18px 28px;
+    transition: .3s;
+    border-color:#415123 ;
     background-color: #415123;
 }
 
@@ -489,8 +495,11 @@ main{
 .subscribe .title-content-isi{
     color: #FFFFFF;
 }
+.title-content-isi{
+    margin-bottom: 10px;
+}
 .subscribe .email{
-    margin: 25px auto 0;
+    margin: 0 auto;
     width: 600px;
     height: 73px;
     border-radius: 8px;
@@ -508,7 +517,7 @@ main{
     border: 0px;
     font-size: 14px;
 }
-.subscribe input[type="text"]:focus {
+.subscribe input[type="email"]:focus {
     outline: none;
 }
 .subscribe .btn-email{
@@ -518,8 +527,22 @@ main{
     font-weight: 600;
     font-size: 16px;
     background-color: #415123;
-    color: #FFFFFF;
+    color: #fff;
 }
+
+    /* ---------alert email subscribe------------------- */
+    .alert-email{
+        margin-bottom: 10px;
+    }
+    .alert-email p{
+        padding: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 500;
+        background-color: rgb(223, 152, 20);
+        color: #fff;
+    }
 
     /* ----------footer---------- */
 footer{

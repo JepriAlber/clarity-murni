@@ -8,7 +8,7 @@ $(document).ready(function(){
         infinite: false,
         speed: 300,
         slidesToShow: 4,
-       slidesToScroll: 1,
+        slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 1199,
@@ -38,6 +38,7 @@ $(document).ready(function(){
     var targetSticky = $('.site-header');
     var rocket = $('.rocket');
     var positionScroll = 0;
+    
         $(window).on('scroll',function(){
             var scroll = $(window).scrollTop();
                 if(scroll > 0){
@@ -76,5 +77,13 @@ $(document).ready(function(){
             scrollTop: $('html').offset().top
          }, 'slow');
     });
+    
+    //--------alert email------------
+    $('.alert-email').hide();
+    $('#sub-email').click(function(){
+        $('.alert-email').show(1000);
+    });
+
+    
     
 });

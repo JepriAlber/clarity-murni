@@ -322,6 +322,10 @@
         font-size: 11px;
         line-height: 14px;
     }
+    .btn:hover{
+        margin-right: 20px;
+        padding: 13px 14px;
+    }
 
     /* ----------------------------content------------------------------- */
     .title-content{
@@ -414,6 +418,9 @@
         font-size: 11px;
         line-height: 16px;
     }
+    .btn-are-you:hover{
+        padding: 12px 28px;
+    }
 
     /* ---------choose product--------- */
     .row-choose-product{
@@ -489,7 +496,7 @@
         width: 216px;
     }
     .subscribe .title-content-isi{
-        margin: 10px auto;
+        margin: 5px auto;
         width: 248px;
         font-size: 12px;
         line-height: 22px;
@@ -512,6 +519,16 @@
         border-radius: 5px;
         font-size: 9px;
     }
+
+            /* --------alert email subscribe-------- */
+            .alert-email {
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            .alert-email p {
+                padding: 6px;
+                font-size: 8px;
+            }
 
       /* ----------footer---------- */
     footer{
