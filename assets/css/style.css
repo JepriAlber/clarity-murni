@@ -284,8 +284,12 @@ main{
     border-radius: 10px;
     font-weight: 500;
     font-size: 16px;
-    background: #415123;
+    background-color: #415123;
     color: #FFFFFF;
+}
+.btn-cart:hover{
+    cursor:pointer;
+    background-color: #516828;
 }
 
     /* ------------slick product------------ */
@@ -528,6 +532,10 @@ main{
     font-size: 16px;
     background-color: #415123;
     color: #fff;
+}
+.subscribe .btn-email:hover{
+    cursor:pointer;
+    background-color: #516828;
 }
 
     /* ---------alert email subscribe------------------- */

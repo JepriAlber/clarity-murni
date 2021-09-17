@@ -83,7 +83,5 @@ $(document).ready(function(){
     $('#sub-email').click(function(){
         $('.alert-email').show(1000);
     });
-
-    
     
 });
