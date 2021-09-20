@@ -140,12 +140,12 @@ a {
 }
 
 /* ----------sticky--------------------- */
-.stiky-active{
+.site-header.stiky-active{
     position: fixed;
     width: 100%;
     opacity: 0.8;
     z-index: 10;    
-    height: 110px !important;
+    height: 110px ;
 }
 .stiky-scroll{
     background-color: #fff9f2;
@@ -222,11 +222,11 @@ main{
 }
         /* ----product--- */
 
-.row-product{
-    display: flex !important;
-    align-items: stretch !important;
-    flex-flow: row nowrap !important;
-    justify-content: flex-start !important;
+.row-product.slick-slider {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
 }
 .product-shop{
     width: 370px !important;
@@ -690,7 +690,7 @@ footer .copyright{
     z-index: 9;
     top: 50%;
     left: 50%;
-    width: 50%;
+    width: calc(100vw - 40px);
     background-color: #fff;
 }
 .popup-transition {

@@ -1,7 +1,8 @@
 $(document).ready(function(){
     
     // -------------slick------------------
-    $('#slick-product').slick({
+    $("#slick-product").not(".slick-initialized").slick({
+    // $('#slick-product').slick({
         autoplay: true,
         arrows: false,
         dots: true,
@@ -80,6 +81,7 @@ $(document).ready(function(){
     
     //--------alert email------------
     $('.alert-email').hide();
+    
     $('#sub-email').click(function(){
         $('.alert-email').show(1000);
     });
